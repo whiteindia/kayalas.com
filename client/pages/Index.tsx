@@ -13,27 +13,25 @@ export default function Index() {
             {/* Subtitle */}
             <div className="mb-6">
               <span className="inline-block text-college-gold font-medium text-sm tracking-wider uppercase border border-college-gold/20 px-4 py-2 rounded-full">
-                Education & Excellence
+                academy & Investments
               </span>
             </div>
 
             {/* Main Heading */}
             <div className="mb-8">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium leading-tight text-white tracking-tight capitalize mb-6">
-                Welcome to Excellence
-                <br className="hidden sm:block" />
-                <span className="sm:hidden"> </span>University
+                Welcome to Kayala's Pvt Ltd
               </h1>
             </div>
 
             {/* Description */}
             <div className="mb-12 max-w-3xl mx-auto px-4">
               <p className="text-base sm:text-lg lg:text-xl font-medium leading-relaxed text-gray-300 text-center">
-                Excellence University is a premier institution dedicated to
-                fostering academic growth, innovation, and value creation across
-                diverse disciplines. Based in India, we leverage our deep
-                educational expertise and extensive network to partner with
-                students and drive exceptional academic results.
+                Kayala's is a premier private equity firm dedicated to fostering
+                growth, innovation, and value creation across diverse
+                industries. Based in India, we leverage our deep market
+                expertise and extensive network to partner with businesses and
+                drive exceptional results.
               </p>
             </div>
 
