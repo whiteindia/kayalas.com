@@ -21,16 +21,16 @@ export default function Index() {
 
           {/* Main Heading */}
           <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl font-medium leading-tight text-white tracking-tight capitalize mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium leading-tight text-white tracking-tight capitalize mb-6">
               Welcome to Excellence
-              <br />
-              University
+              <br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>University
             </h1>
           </div>
 
           {/* Description */}
-          <div className="mb-12 max-w-4xl mx-auto">
-            <p className="text-lg md:text-xl font-medium leading-relaxed text-gray-300 text-center">
+          <div className="mb-12 max-w-3xl mx-auto px-4">
+            <p className="text-base sm:text-lg lg:text-xl font-medium leading-relaxed text-gray-300 text-center">
               Excellence University is a premier institution dedicated to
               fostering academic growth, innovation, and value creation across
               diverse disciplines. Based in India, we leverage our deep
