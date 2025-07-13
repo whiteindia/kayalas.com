@@ -1,61 +1,67 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import { LogoCarousel } from "@/components/ui/logo-carousel";
+import { ArrowRight } from "lucide-react";
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
-
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-            />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
+    <div className="min-h-screen bg-black text-white flex flex-col justify-between relative">
+      {/* Header Spacer */}
+      <div className="flex-shrink-0">
+        <div className="h-14"></div>
+      </div>
+
+      {/* Main Content */}
+      <div className="flex-1 flex flex-col justify-center relative">
+        <div className="max-w-5xl mx-auto px-6 py-24 text-center">
+          {/* Subtitle */}
+          <div className="mb-6">
+            <span className="inline-block text-college-gold font-medium text-sm tracking-wider uppercase border border-college-gold/20 px-4 py-2 rounded-full">
+              Education & Excellence
+            </span>
+          </div>
+
+          {/* Main Heading */}
+          <div className="mb-8">
+            <h1 className="text-5xl md:text-7xl font-medium leading-tight text-white tracking-tight capitalize mb-6">
+              Welcome to Excellence
+              <br />
+              University
+            </h1>
+          </div>
+
+          {/* Description */}
+          <div className="mb-12 max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl font-medium leading-relaxed text-gray-300 text-center">
+              Excellence University is a premier institution dedicated to
+              fostering academic growth, innovation, and value creation across
+              diverse disciplines. Based in India, we leverage our deep
+              educational expertise and extensive network to partner with
+              students and drive exceptional academic results.
+            </p>
+          </div>
+
+          {/* CTA Button */}
+          <div className="flex justify-center">
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-college-gold text-black font-medium text-base px-8 py-4 rounded-lg hover:bg-college-gold-dark transition-colors duration-300 cursor-pointer"
+            >
+              <ArrowRight className="w-4 h-4" />
+              <span>Learn More</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Partner Logos Section */}
+      <div className="flex-shrink-0 pb-8">
+        <div className="w-full">
+          <div className="text-center mb-8">
+            <h3 className="text-lg text-gray-400 font-medium">
+              Our Academic Partners & Industry Collaborations
+            </h3>
+          </div>
+          <LogoCarousel />
+        </div>
       </div>
     </div>
   );
