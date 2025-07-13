@@ -28,14 +28,14 @@ export function Navigation() {
               <div className="text-college-gold">
                 <div className="flex items-center">
                   <div className="border-2 border-college-gold p-2 mr-3">
-                    <div className="text-lg font-bold">EU</div>
+                    <div className="text-lg font-bold">K</div>
                   </div>
                   <div>
                     <div className="text-xl font-bold tracking-wider">
-                      EXCELLENCE
+                      KAYALA'S
                     </div>
                     <div className="text-xs tracking-wider opacity-80">
-                      UNIVERSITY OF TOMORROW
+                      LEGACY OF PROSPERITY
                     </div>
                   </div>
                 </div>
