@@ -60,10 +60,10 @@ export function Navigation() {
                 </Link>
               ))}
               <Link
-                to="/alumni"
+                to="/franchise"
                 className="bg-college-gold text-black px-4 py-2 text-sm font-medium tracking-wider hover:bg-college-gold-dark transition-colors duration-200"
               >
-                ALUMNI NETWORK
+                FRANCHISE PARTNER
               </Link>
             </div>
           </div>
