@@ -103,11 +103,11 @@ export function Navigation() {
               </Link>
             ))}
             <Link
-              to="/alumni"
+              to="/franchise"
               className="block bg-college-gold text-black px-3 py-2 text-base font-medium tracking-wider mt-4"
               onClick={() => setIsMenuOpen(false)}
             >
-              ALUMNI NETWORK
+              FRANCHISE PARTNER
             </Link>
           </div>
         </div>
