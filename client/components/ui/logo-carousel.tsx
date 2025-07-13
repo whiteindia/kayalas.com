@@ -58,13 +58,13 @@ export function LogoCarousel() {
           {[...logos, ...logos].map((logo, index) => (
             <div
               key={`${logo.name}-${index}`}
-              className="flex-shrink-0 w-[175px] mr-6 last:mr-0"
+              className="flex-shrink-0 w-32 sm:w-40 lg:w-44 mr-4 sm:mr-6 last:mr-0"
             >
               <figure className="text-center">
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="inline max-w-full h-12 object-contain filter brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
+                  className="inline max-w-full h-8 sm:h-10 lg:h-12 object-contain filter brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
                 />
               </figure>
             </div>
