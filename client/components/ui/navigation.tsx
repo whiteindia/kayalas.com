@@ -25,21 +25,11 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <div className="text-college-gold">
-                <div className="flex items-center">
-                  <div className="border-2 border-college-gold p-2 mr-3">
-                    <div className="text-lg font-bold">K</div>
-                  </div>
-                  <div>
-                    <div className="text-xl font-bold tracking-wider">
-                      KAYALA'S
-                    </div>
-                    <div className="text-xs tracking-wider opacity-80">
-                      LEGACY OF PROSPERITY
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F959f0d90f5e4405f97d4dccc836c94b0%2Fc1c3df1c6d2d4e7cb0196172f731b379?format=webp&width=800"
+                alt="Kayala's - Legacy of Prosperity"
+                className="h-12 w-auto"
+              />
             </Link>
           </div>
 
