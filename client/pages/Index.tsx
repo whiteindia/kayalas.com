@@ -1,15 +1,14 @@
 import { LogoCarousel } from "@/components/ui/logo-carousel";
+import { Navigation } from "@/components/ui/navigation";
 import { ArrowRight } from "lucide-react";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col justify-between relative">
-      {/* Header Spacer */}
-      <div className="flex-shrink-0">
-        <div className="h-14"></div>
-      </div>
+    <div className="min-h-screen bg-black text-white">
+      <Navigation />
+      <div className="flex flex-col justify-between relative min-h-[calc(100vh-64px)]">
 
-      {/* Main Content */}
+            {/* Main Content */}
       <div className="flex-1 flex flex-col justify-center relative">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 text-center">
           {/* Subtitle */}
@@ -19,7 +18,7 @@ export default function Index() {
             </span>
           </div>
 
-          {/* Main Heading */}
+                    {/* Main Heading */}
           <div className="mb-8">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium leading-tight text-white tracking-tight capitalize mb-6">
               Welcome to Excellence
