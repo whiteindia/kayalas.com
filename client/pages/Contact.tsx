@@ -1,6 +1,10 @@
+import { Navigation } from "@/components/ui/navigation";
+
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-black text-white py-24">
+    <div className="min-h-screen bg-black text-white">
+      <Navigation />
+      <div className="py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white mb-6">
